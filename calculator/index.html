@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<link>
+<meta charset="utf-8">
+<title>Calculator</title>
+<link rel="stylesheet" href="index.css">
+</link>
+
+<body>
+  <div id="container">
+    <input type="text" id="display" readonly />
+    <div class="btn-container">
+      <button class="btn"
+        onclick="currDisplay=currDisplay+9; document.getElementById('display').value=currDisplay;">9</button>
+      <button class="btn"
+        onclick="currDisplay=currDisplay+8; document.getElementById('display').value=currDisplay;">8</button>
+      <button class="btn"
+        onclick="currDisplay=currDisplay+7; document.getElementById('display').value=currDisplay;">7</button>
+      <button class="btn"
+        onclick="currDisplay=currDisplay+6; document.getElementById('display').value=currDisplay;">6</button>
+      <button class="btn"
+        onclick="currDisplay=currDisplay+5; document.getElementById('display').value=currDisplay;">5</button>
+      <button class="btn"
+        onclick="currDisplay=currDisplay+4; document.getElementById('display').value=currDisplay;">4</button>
+      <button class="btn"
+        onclick="currDisplay=currDisplay+3; document.getElementById('display').value=currDisplay;">3</button>
+      <button class="btn"
+        onclick="currDisplay=currDisplay+2; document.getElementById('display').value=currDisplay;">2</button>
+      <button class="btn"
+        onclick="currDisplay=currDisplay+1; document.getElementById('display').value=currDisplay;">1</button>
+      <button class="btn"
+        onclick="currDisplay=currDisplay+'+'; document.getElementById('display').value=currDisplay;">+</button>
+      <button class="btn"
+        onclick="currDisplay=currDisplay+0; document.getElementById('display').value=currDisplay;">0</button>
+      <button class="btn"
+        onclick="currDisplay=currDisplay+'-'; document.getElementById('display').value=currDisplay;">-</button>
+      <button class="btn"
+        onclick="currDisplay=currDisplay+'*'; document.getElementById('display').value=currDisplay;">*</button>
+      <button class="btn"
+        onclick="currDisplay=currDisplay+'/'; document.getElementById('display').value=currDisplay;">/</button>
+      <button class="btn"
+        onclick="currDisplay=''; document.getElementById('display').value=currDisplay;">C</button>
+    </div>
+    <button class="btn" id="equalBtn"
+        onclick="let res=eval(currDisplay); currDisplay=res; document.getElementById('display').value=currDisplay;">=</button>
+    </div>
+  </div>
+  <script>
+    let currDisplay = "";
+    document.getElementById('display').value = currDisplay;
+
+  </script>
+</body>
+
+</html>

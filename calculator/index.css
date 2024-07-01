@@ -1,0 +1,33 @@
+#container{
+  border: 2px solid rgb(19, 19, 19);
+  border-radius: 10px;
+  width: 20%;
+  background-color: rgb(238, 209, 240);
+  display: grid;
+}
+#display{
+  margin: 15px;
+  height: 35px;
+  border-radius: 30px;
+  border: 2px solid black;
+  font-size: large;
+  padding: 10px;
+}
+
+.btn-container{
+  margin-left: 25px;
+}
+
+#equalBtn{
+  margin-left: 40%;
+}
+
+.btn{
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  font-size: large;
+  border-radius: 40px;
+  background-color: rgb(188, 127, 170);
+  cursor: pointer;
+}
